@@ -420,17 +420,22 @@
         border-radius: 8px;
         overflow: hidden;
         position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 0.5s ease;
+      }
+
+      .thumb-item:hover {
+        transform: scale(1.05);
       }
 
       .thumb-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 0;
         transition: transform 0.5s ease;
-      }
-
-      .thumb-item:hover img {
-        transform: scale(1.1);
       }
 
       /* Quote Section with Background */
@@ -757,38 +762,62 @@
       </div>
     </section>
 
-    <!-- Thumbnail Strip with IMG Tags -->
+    <!-- Thumbnail Strip with Background + IMG Tags -->
     <div class="thumbnail-strip">
       <!-- IMG #15 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=16')"
+      >
         <img src="https://picsum.photos/200/280?random=16" alt="Thumbnail 1" />
       </div>
       <!-- IMG #16 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=17')"
+      >
         <img src="https://picsum.photos/200/280?random=17" alt="Thumbnail 2" />
       </div>
       <!-- IMG #17 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=18')"
+      >
         <img src="https://picsum.photos/200/280?random=18" alt="Thumbnail 3" />
       </div>
       <!-- IMG #18 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=19')"
+      >
         <img src="https://picsum.photos/200/280?random=19" alt="Thumbnail 4" />
       </div>
       <!-- IMG #19 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=20')"
+      >
         <img src="https://picsum.photos/200/280?random=20" alt="Thumbnail 5" />
       </div>
       <!-- IMG #20 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=21')"
+      >
         <img src="https://picsum.photos/200/280?random=21" alt="Thumbnail 6" />
       </div>
       <!-- IMG #21 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=22')"
+      >
         <img src="https://picsum.photos/200/280?random=22" alt="Thumbnail 7" />
       </div>
       <!-- IMG #22 -->
-      <div class="thumb-item">
+      <div
+        class="thumb-item"
+        style="background-image: url('https://picsum.photos/200/280?random=23')"
+      >
         <img src="https://picsum.photos/200/280?random=23" alt="Thumbnail 8" />
       </div>
     </div>
